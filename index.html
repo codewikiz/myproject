@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <div id="container1">
+    
+          <h1 id="title">freeCodeCamp Survey Form</h1>
+    
+          <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+        </div>
+        <div id="container2">
+          <form action="action.php" id="survey-form">
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="age" id="number-label">Age</label><br>
+            <input type="number" id="number" name="age" min="5" max="110" placeholder="Enter your age"><br><br>
+            <label for="dropdown">Which option best describes your current role?</label><br>
+            <select name="role" id="dropdown">
+              <option value="">--Select current role--</option>
+              <option value="Student">Student</option>
+              <option value="ftj">Full Time Job</option>
+              <option value="ftl">Full Time Learner</option>
+              <option value="pnts">Prefer Not To Say</option>
+              <option value="other">Other</option>
+            </select><br><br>
+            <label for="recommend">Would you recommend freecodecamp to a friend?</label><br>
+    
+            <label for="yes" class="radio-button"><input id="yes" type="radio" name="recommend" value="yes"> Yes</label><br>
+            <label for="no" class="radio-button"><input id="no" type="radio" name="recommend" value="notsure"> Not Sure</label><br>
+            <label for="maybe" class="radio-button"><input id="maybe" type="radio" name="recommend" value="maybe"> Maybe</label><br><br>
+    
+            <legend>What would you like to see improved? (Check all that apply)</legend>
+            <div>
+              <input type="checkbox" id="fep" name="improvement" value="fep">
+              <label for="fep">Front-End Projects</label>
+              <br><input type="checkbox" id="bep" name="improvement" value="bep">
+              <label for="bep">Back-End Projects</label>
+              <br><input type="checkbox" id="challenges" name="improvement" value="challenges">
+    
+              <label for="challenges">Challenges</label>
+              <br><input type="checkbox" id="forums" name="improvement" value="forums">
+              <label for="forums">Forums</label>
+            </div>
+            <br>
+            <label for="comments">Any comments or suggestions?</label><br>
+    
+            <textarea id="comments" name="comments" rows="5" columns="auto" placeholder="Enter your comment here..."></textarea><br><br>
+    
+            <div class="buttonholder">
+              <input type="submit" value="Submit" id="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+</body>
+</html>
